@@ -15,20 +15,12 @@
   font-size: 20px;
 }
 .item_on  {
-  display: none;
   font-weight: 500;
   color: green;
 }
 
 .item_off {
-  display: none;
   font-weight: 500;
   color: red;
 }
 
-.item_on.isOnline {
-display: flex;
-}
-.item_off.isOffline{
-  display: flex;
-}

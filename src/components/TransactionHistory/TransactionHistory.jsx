@@ -1,5 +1,5 @@
 import css from "./TransactionHistory.module.css";
-const TransactionHistory = (items) => {
+const TransactionHistory = ({items}) => {
   return (
     <table className={css.table}>
       <thead>
@@ -28,7 +28,7 @@ const TransactionHistory = (items) => {
         </tr>
       </thead>
       <tbody>
-        {items.items.map((e) => {
+        {items.map((e) => {
           let name = e.type;
           name = name.replace(name[0], name[0].toUpperCase());
           return (
